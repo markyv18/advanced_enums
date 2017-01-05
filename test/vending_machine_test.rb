@@ -54,12 +54,12 @@ class VendingMachineTest < Minitest::Test
 
     vm.add_snack(snack1)
     vm.add_snack(snack2)
-
+    # require "pry"; binding.pry
     assert_equal ["White Castle Burger", "Snickers"], vm.snacks_by_name
   end
 
   def test_can_collect_items_by_quantity
-    skip
+    # skip
     vm = VendingMachine.new
     snack1 = Snack.new("White Castle Burger", 1)
     snack2 = Snack.new("Snickers", 4)
